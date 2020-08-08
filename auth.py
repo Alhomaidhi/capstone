@@ -11,9 +11,9 @@ import os
 # ALGORITHMS = os.getenv('ALGORITHMS')
 # API_AUDIENCE = os.getenv('API_AUDIENCE')
 
-AUTH0_DOMAIN = dev-tps54maa.us.auth0.com
+AUTH0_DOMAIN = 'dev-tps54maa.us.auth0.com'
 ALGORITHMS = ['RS256']
-API_AUDIENCE = https://capstoneaaa.herokuapp.com
+API_AUDIENCE = 'https://capstoneaaa.herokuapp.com'
 
 # AuthError Exception
 
