@@ -11,9 +11,6 @@ AUTH0_DOMAIN = os.environ['AUTH0_DOMAIN']
 ALGORITHMS = os.environ['ALGORITHMS']
 API_AUDIENCE = os.environ['API_AUDIENCE']
 
-# AUTH0_DOMAIN = 'dev-tps54maa.us.auth0.com'
-# ALGORITHMS = ['RS256']
-# API_AUDIENCE = 'https://capstoneaaa.herokuapp.com'
 
 # AuthError Exception
 
