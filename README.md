@@ -18,13 +18,20 @@ Follow instructions to install the latest version of python for your platform in
 
 We recommend working within a virtual environment whenever using Python for projects. This keeps your dependencies for each project separate and organaized. Instructions for setting up a virual enviornment for your platform can be found in the [python docs](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
 
-#### PIP Dependencies
+#### Deployment
 
-Once you have your virtual environment setup and running, install dependencies by naviging to the `/backend` directory and running:
+##### Heroku
 
-```bash
-pip install -r requirements.txt
-```
+1.  Create an account on heroku
+2.  Login with CLI
+3.  SetUp requirements.txt
+4.  Use a Procfile with a command simialr to this "web: gunicorn app:app" where app is the file name of your python app
+5.  SetUp envirmonet variables on in the setup.sh file and in the heroku dashboards (under settings).
+6.  Create database on heroku using "heroku addons:create heroku-postgresql:hobby-dev --app name_of_your_application" 
+7.  Use this command "heroku config --app name_of_your_application" to get the URL of your database (dont forget to update the envirmonet variables)
+8.  Push your files to git hub and run it click the "deploy" button after connecting heroku app to your github repository.
+9.  Your app is running now.
+
 
 This will install all of the required packages we selected within the `requirements.txt` file.
 
@@ -36,10 +43,6 @@ This will install all of the required packages we selected within the `requireme
 
 - [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/#) is the extension we'll use to handle cross origin requests from our frontend server. 
 
-## Database Setup
-Two DB in the folder
-Development: Database.db
-Test: Database_Test.db 
 
 ## Roles
 
