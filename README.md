@@ -1,7 +1,7 @@
 # Casting API Backend
 
 ## URL
-----------
+https://capstoneaaa.herokuapp.com/
 
 
 ## Getting Started
@@ -132,7 +132,7 @@ DELETE '/movies/<int:id>'
 - Request Arguments: id of a movie
 - Returns: a success boolean and the id of the deleted movie
 Example:
-Request:  http://127.0.0.1:5000/movies/53
+Request:  https://capstoneaaa.herokuapp.com/53
 Response:
 {
     "deleted": 53,
@@ -144,7 +144,7 @@ DELETE '/actors/<int:id>'
 - Request Arguments: id of an actor
 - Returns: a success boolean and the id of the deleted actor
 Example:
-Request:  http://127.0.0.1:5000/actors/1
+Request:  https://capstoneaaa.herokuapp.com/actors/1
 Response:
 {
     "deleted": 1,
@@ -189,7 +189,7 @@ PATCH '/movies/<int:id>'
 - Request Arguments: title or release date
 - Returns: a success boolean and the id of the updated movie
 Example:
-Request:  http://127.0.0.1:5000/movies/53
+Request:  https://capstoneaaa.herokuapp.com/53
 {
     "release_date": "2002"
 }
@@ -204,7 +204,7 @@ PATCH '/actors/<int:id>'
 - Request Arguments: name, age or gender
 - Returns: a success boolean and the id of the updated actor
 Example:
-Request:  http://127.0.0.1:5000/actors/3
+Request:  https://capstoneaaa.herokuapp.com/3
 {
     "name": "Abdullah Alhomaidhi"
 }
@@ -244,7 +244,7 @@ python test_app.py
 
 ## Setting up authentication
 
-### login link
+### Login link
 
 https://dev-tps54maa.us.auth0.com/authorize?
   response_type=token&
@@ -253,13 +253,13 @@ https://dev-tps54maa.us.auth0.com/authorize?
 scope=openid%20profile%20email&
 audience=http://localhost:8080
 
-### logout link
+### Logout link
 
 https://dev-tps54maa.us.auth0.com/v2/logout?
   client_id=dvxo5t6N9MttN7wPL3878BDDiszs3cB6&
   returnTo=http://localhost/5000
 
-### credentials 
+### Credentials 
 
 - Casting Assistant
    Username: CA@CA.com
