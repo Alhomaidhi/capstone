@@ -259,16 +259,4 @@ https://dev-tps54maa.us.auth0.com/v2/logout?
   client_id=dvxo5t6N9MttN7wPL3878BDDiszs3cB6&
   returnTo=http://localhost/5000
 
-### Credentials 
 
-- Casting Assistant
-   Username: CA@CA.com
-   Passwrod: 123456aA
-
-- Casting Director
-   Username: CD@CD.com
-   Passwrod: 123456aA
-
-- Executive Producer
-   Username: EP@EP.com
-   Passwrod: 123456aA
