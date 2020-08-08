@@ -3,7 +3,6 @@ import os
 import unittest
 import json
 from flask_sqlalchemy import SQLAlchemy
-import os
 
 from models import setup_db,Movie, Actor
 from app import create_app
@@ -14,7 +13,7 @@ class CastingTestCase(unittest.TestCase):
     def setUp(self):
         self.app = create_app()
         self.client = self.app.test_client
-        self.database_path_test = os.getenv('database_path_test')
+        self.database_path_test = os.environ['DATABASE_URL']
         setup_db(self.app, self.database_path_test)
 
         # binds the app to the current context
